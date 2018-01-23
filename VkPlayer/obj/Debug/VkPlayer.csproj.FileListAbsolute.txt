@@ -1,0 +1,13 @@
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\bin\Debug\VkPlayer.exe.config
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\bin\Debug\VkPlayer.exe
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\bin\Debug\VkPlayer.pdb
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\obj\Debug\VkPlayer.csprojResolveAssemblyReference.cache
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\obj\Debug\VkPlayer.FormMain.resources
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\obj\Debug\VkPlayer.FormAuthorization.resources
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\obj\Debug\VkPlayer.Properties.Resources.resources
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\obj\Debug\VkPlayer.csproj.GenerateResource.Cache
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\obj\Debug\VkPlayer.csproj.CoreCompileInputs.cache
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\obj\Debug\VkPlayer.exe
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\obj\Debug\VkPlayer.pdb
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\bin\Debug\Newtonsoft.Json.dll
+D:\z_tp\C_sharp\VkPlayer\VkPlayer\bin\Debug\Newtonsoft.Json.xml

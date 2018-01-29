@@ -19,7 +19,7 @@ namespace VkPlayer
 
         private void FormAuthorization_Load(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=4962552&scope=audio&display=popup&redirect_uri=https://oauth.vk.com/blank.html&v=5.71&response_type=token");
+            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=4962552&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=audio&response_type=token&v=5.71");
         }
 
         private void webBrowser1_Navigating(object sender, WebBrowserNavigatingEventArgs e)
@@ -40,7 +40,7 @@ namespace VkPlayer
                     Settings1.Default.id = tokenMas.Split('=')[3];
                     Settings1.Default.auth = true;
                     MessageBox.Show("Token=" + Settings1.Default.token + "id=" + Settings1.Default.id, "Auth");
-                    this.Close();
+                    //this.Close();
                 }
             }
             catch

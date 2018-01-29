@@ -29,25 +29,19 @@ namespace VkPlayer
             backgroundWorker1.RunWorkerAsync();
         }
 
-        public class Audio
-        {
-            public int aid { get; set; }
-            public int owner_id { get; set; }
-            public string artist { get; set; }
-            public string title { get; set; }
-            public int duration { get; set; }
-            public string url { get; set; }
-            public string lurics_id { get; set; }
-            public int genre { get; set; }
-        }
+        
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+            audioList = new List<Audio>
+            {
+                new Audio(){ aid=0, duration=0, artist="noname", genre=0, lurics_id="noname", owner_id=0, title="noname", url="none" }
+            }; //надо инициализировать список в хроме вкладка открыта как это сделать
             while (!Settings1.Default.auth)
             {
-                Thread.Sleep(500);
+                Thread.Sleep(50);
             }
-            WebRequest request = WebRequest.Create("https://api.vk.com/method/audio.get?owner_id=" + Settings1.Default.id+"&need_user=0&acces_token"+Settings1.Default.token);
+            WebRequest request = WebRequest.Create("https://api.vk.com/method/audio.get?owner_id=" + Settings1.Default.id+"&need_user=0&access_token="+Settings1.Default.token);
             WebResponse response = request.GetResponse();
             Stream dataStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(dataStream);
